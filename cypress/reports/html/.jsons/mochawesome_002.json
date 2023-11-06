@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-06T20:08:25.233Z",
+    "end": "2023-11-06T20:08:37.087Z",
+    "duration": 11854,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "85ccb02e-80c3-4883-9a81-ad60b7ca4c71",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\NewArticleCreationTest.cy.js",
+      "file": "cypress\\e2e\\tests\\NewArticleCreationTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "New Article creation test",
+          "fullTitle": "New Article creation test",
+          "timedOut": null,
+          "duration": 7626,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_HomePage.default.visit();\n_HomePage.default.clickSignInButton();\n_LoginPage.default.enterDataEmail();\n_LoginPage.default.enterDataPassword();\n_LoginPage.default.clickSignInbutton();\n_HomePage.default.clickNewArticleButton();\n_NewArticlePage.default.enterArticleTitle();\n_NewArticlePage.default.enterDescription();\n_NewArticlePage.default.enterArticleBody();\n_NewArticlePage.default.clickPublishButton();\n_NewArticlePage.default.getEditButton().should('be.visible');\n_NewArticlePage.default.getDeleteButton().should('be.visible');\n_NewArticlePage.default.getUrl().should('include', '/article');",
+          "err": {},
+          "uuid": "689acb28-a95a-44c7-bf21-650dab33d599",
+          "parentUUID": "85ccb02e-80c3-4883-9a81-ad60b7ca4c71",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "689acb28-a95a-44c7-bf21-650dab33d599"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 7626,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

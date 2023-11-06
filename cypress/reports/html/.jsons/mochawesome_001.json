@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-06T20:08:10.084Z",
+    "end": "2023-11-06T20:08:18.462Z",
+    "duration": 8378,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c5ee38e-60a4-4b75-843d-2b582ed99041",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\LogoutTest.cy.js",
+      "file": "cypress\\e2e\\tests\\LogoutTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Log out test",
+          "fullTitle": "Log out test",
+          "timedOut": null,
+          "duration": 4896,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_HomePage.default.visit();\n_HomePage.default.clickSignInButton();\n_LoginPage.default.enterDataEmail();\n_LoginPage.default.enterDataPassword();\n_LoginPage.default.clickSignInbutton();\n_HomePage.default.clickSettingsButton();\n_HomePage.default.clickLogOutButton();\n_HomePage.default.getHomeButton().should('be.visible');\n_HomePage.default.getSignInButton().should('be.visible');\n_HomePage.default.getSignUpButton().should('be.visible');",
+          "err": {},
+          "uuid": "24e9adb7-5c6d-4659-9d97-126d7a0d260b",
+          "parentUUID": "0c5ee38e-60a4-4b75-843d-2b582ed99041",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "24e9adb7-5c6d-4659-9d97-126d7a0d260b"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4896,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
