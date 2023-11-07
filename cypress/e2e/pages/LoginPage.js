@@ -6,9 +6,6 @@ const userEmail = 'terariv432@wanbeiz.com';
 const userPassword = 'helen555helen555';
 const invalidEmailInput = 'djiwdjiw56tf5@gmail.com';
 const invalidPasswordInput = 'jjkjjshssqs5rrv3#fghj8i';
-
-
-
 class LoginPage {
     enterDataEmail(){
         cy.get(emailInput).type(userEmail);
@@ -28,8 +25,5 @@ class LoginPage {
     enterInvalidPassword(){
         cy.get(passwordInput).type(invalidPasswordInput);
     }
-    
-    
 }
-
 module.exports = new LoginPage();

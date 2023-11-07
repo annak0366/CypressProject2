@@ -1,6 +1,5 @@
 import homePage from '../pages/HomePage'
 import loginPage from '../pages/LoginPage'
-
 describe('Login Test Suite', ()=>{
     beforeEach(() => {
         homePage.visit();
@@ -22,7 +21,7 @@ describe('Login Test Suite', ()=>{
         loginPage.getErrorMessage().should('be.visible')
         .should('contain.text', "password can't be blank");
     })
-    
+
     it('Login with the empty "Email" field', () => {
         loginPage.enterDataPassword();
         loginPage.clickSignInbutton();

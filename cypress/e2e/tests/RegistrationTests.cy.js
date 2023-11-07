@@ -5,7 +5,6 @@ describe('Registration Test Suite', ()=>{
         homePage.visit();
         homePage.clickSignUpButton();
     });
-
     it('Registration with valid data', () => {
         registrationPage.enterDataRandomUsername();
         registrationPage.enterDataEmailAndPassword();
@@ -25,7 +24,6 @@ describe('Registration Test Suite', ()=>{
         registrationPage.enterDataRegisteredUsername();
         registrationPage.enterDataEmailAndPassword();
         registrationPage.clickSignUpButton();
-
         registrationPage.getErrorMessage().should('be.visible')
         .should('contain.text', "username has already been taken");
     })

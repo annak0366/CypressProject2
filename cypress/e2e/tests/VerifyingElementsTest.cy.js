@@ -1,5 +1,4 @@
 import homePage from '../pages/HomePage';
-
 it('Verifying elements test', ()=> {
     homePage.visit();
     homePage.getLogo().should('be.visible');

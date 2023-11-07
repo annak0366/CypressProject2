@@ -7,11 +7,8 @@ const newArticleSelector = '[ui-sref="app.editor"]';
 const settingsSelector = '[ui-sref="app.settings"]';
 const profileButtonSelector = '[ui-sref="app.profile.main({ username: $ctrl.currentUser.username })"]';
 const logOutButton = '[ng-click="$ctrl.logout()"]';
-
 class HomePage {
-    visit(){
-        cy.visit('https://demo.realworld.io/#/');
-    }
+    visit = () => cy.visit('https://demo.realworld.io/#/');
     clickSignUpButton(){
         cy.get(signUpButtonSelector).click();
     }

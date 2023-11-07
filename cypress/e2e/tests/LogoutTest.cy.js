@@ -1,6 +1,5 @@
 import homePage from '../pages/HomePage';
 import loginPage from '../pages/LoginPage';
-
 it('Log out test', () => {
     homePage.visit();
     homePage.clickSignInButton();

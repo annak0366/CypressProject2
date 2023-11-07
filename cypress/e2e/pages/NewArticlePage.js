@@ -8,7 +8,6 @@ const deleteButton = 'button.btn.btn-outline-danger';
 const createdTitle = 'h1.ng-binding';
 const data1 = faker.random.alphaNumeric(10);
 const data2 = faker.random.alphaNumeric(10);
-
 class NewArticlePage {
     enterArticleTitle(){
         cy.get(inputArticleTitle).type(data1);
@@ -35,5 +34,4 @@ class NewArticlePage {
         return cy.url();
     }
 }
-
 module.exports = new NewArticlePage();

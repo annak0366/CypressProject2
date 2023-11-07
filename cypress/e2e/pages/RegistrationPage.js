@@ -1,5 +1,4 @@
 const faker = require('faker');
-
 const randomUsername = faker.internet.userName();
 const randomEmail = faker.internet.email();
 const randomPassword = faker.internet.password();
@@ -9,7 +8,6 @@ const emailSelector = '[ng-model="$ctrl.formData.email"]';
 const passwordSelector = '[ng-model="$ctrl.formData.password"]';
 const signUpButtonSelector = 'button.btn-primary';
 const errorMessage = '[ng-repeat="error in errors"]';
-
 class RegistrationPage {
     enterDataRandomUsername(){
         cy.get(usernameSelector).type(randomUsername);
