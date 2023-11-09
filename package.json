@@ -5,17 +5,14 @@
   "main": "index.js",
   "scripts": {
     "install-cypress": "npm install cypress",
-    "test": "cypress run",
-    "test:report": "cypress run --spec ../cypress-framework/cypress/e2e/tests/**/*.cy.js --reporter mochawesome",
-    "cypress:open": "cypress open",
-    "cy:run": "cypress run",
-    "start": "cypress open",
-    "clean-reports": "rm -rf mochawesome-report"
+    "install-mochawesome": "npm install --save-dev cypress-mochawesome-reporter",
+    "run-tests": "npx cypress run --e2e",
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.4.0",
+    "cypress": "^13.5.0",
     "cypress-mochawesome-reporter": "^3.6.1",
     "cypress-real-events": "^1.11.0",
     "faker": "^5.5.3"
