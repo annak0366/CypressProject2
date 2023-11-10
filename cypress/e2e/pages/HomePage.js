@@ -9,12 +9,19 @@ const profileButtonSelector = '[ui-sref="app.profile.main({ username: $ctrl.curr
 const logOutButton = '[ng-click="$ctrl.logout()"]';
 class HomePage {
     visit = () => cy.visit('https://demo.realworld.io/#/');
+
+    clickSignInButton(){
+        cy.visit('https://demo.realworld.io/#/');
+        cy.get(signInButtonSelector).click();
+    }
+
+
     clickSignUpButton(){
         cy.get(signUpButtonSelector).click();
     }
-    clickSignInButton(){
-        cy.get(signInButtonSelector).click();
-    }
+    // clickSignInButton(){
+    //     cy.get(signInButtonSelector).click();
+    // }
     getLogo() {
         return cy.get(logoSelector);
     }

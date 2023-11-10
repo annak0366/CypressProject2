@@ -1,11 +1,9 @@
 import homePage from '../pages/HomePage';
 import loginPage from '../pages/LoginPage';
+import userData from '../data.json'; 
 it('Log out test', () => {
-    homePage.visit();
     homePage.clickSignInButton();
-    loginPage.enterDataEmail();
-    loginPage.enterDataPassword();
-    loginPage.clickSignInbutton();
+    loginPage.login(userData.user.email, userData.user.password);
     homePage.clickSettingsButton();
     homePage.clickLogOutButton();
     homePage.getHomeButton().should('be.visible');
